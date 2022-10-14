@@ -3,7 +3,7 @@ import { baseApi } from "./baseApi";
 
 export function uploadHairstyle(data, onUploadProgress) {
     return baseApi({
-      url: "add_caterer",
+      url: "",
       method: "POST",
       data,
       onUploadProgress

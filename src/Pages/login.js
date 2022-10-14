@@ -61,42 +61,60 @@ const Login = () => {
                 </section>
             ) : (
 
-                <section className='row justify-content-center align-items-center'>
-                    <div className='col-6'>
-                    <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <div
-                         className="loginlogo"
-                    >
-                        <img
-                            src={assetsImages.loginLogo}
-                            alt="Catersmart Logo"
-                            /> 
-                    </div>
-                 
-                    {/* <h1>Sign In</h1> */}
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">Username:</label>
-                        <input
-                            type="text"
-                            id="username"
-                            ref={userRef}
-                            autoComplete="off"
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                            required
-                        />
+                <section className='d-flex'>
+                    <div className='col-6 login_des row align-items-center'>
+                        <div
+                            className="loginlogo"
+                        >
+                            <img
+                                src={assetsImages.hmsicon}
+                                alt="hms logo"
+                                /> 
+                        </div>
+                        <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+                        <div className='row justify-content-center align-items-center'>
+                            <div className="col-6">
+                                <div className='form_header text-center'>
+                                    <h4>welcome back</h4>
+                                    <p>please enter your details</p>
+                                </div>
+                                <form  onSubmit={handleSubmit}>
+                                    <label for="username">Login ID</label>
+                                    <input
+                                        type="text"
+                                        id="username"
+                                        ref={userRef}
+                                        autoComplete="off"
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        value={email}
+                                        required
+                                    />
 
-                        <label htmlFor="password">Password:</label>
-                        <input
-                            type="password"
-                            id="password"
-                            onChange={(e) => setPassword(e.target.value)}
-                            value={password}
-                            required
-                        />
-                        <button>Sign In</button>
-                    </form>
+                                    <label for="password">Password</label>
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        onChange={(e) => setPassword(e.target.value)}
+                                        value={password}
+                                        required
+                                    />
+                                    <a href='#' className='text-end'>Forgot Password?</a>
+                                    <button>LOGIN</button>
+                                    <p className='text-center'>Don't have an acoount? <a href='#'>Sign up</a></p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+                    <div className='col-6 logimgblock'>
+                        <h1 className='logdes'>
+                            HMSHost <span>Feeling Good on the Move</span>
+                        </h1>
+                        <img
+                                src={assetsImages.loginbg}
+                                alt="Catersmart Logo"
+                                />
+                    </div>
+
                 
                
                 </section>
