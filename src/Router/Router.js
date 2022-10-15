@@ -21,6 +21,10 @@ export class Router extends Component {
          <Route exact path="/home"  >
             <ProtectedRoute  component={Home} />
          </Route>
+
+         <Route exact path="/home"  >
+            <ProtectedRoute  component={Home} />
+         </Route>
       
       
           </Switch>

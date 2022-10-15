@@ -4,6 +4,7 @@ import loginLogo from '../Assets/images/loginLogo.png';
 import uploadIcon from '../Assets/images/uploadicon.png';
 import loginbg from '../Assets/images/loginbg.png';
 import hmsicon from '../Assets/images/hmslogo.png';
+import hmslogo from '../Assets/images/hmslogowhite.png';
 
 
 
@@ -16,4 +17,5 @@ export const assetsImages = {
     uploadIcon : uploadIcon,
     loginbg : loginbg,
     hmsicon : hmsicon,
+    hmslogo : hmslogo,
 }
