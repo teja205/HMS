@@ -30,6 +30,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import Master from '../Component/mastertable';
 
 
 
@@ -278,7 +279,7 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Table />
+        <Master />
       </Box>
     </Box>
   );
