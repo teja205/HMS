@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import Table from '../Component/table'
+import Master from '../Component/mastertable';
 import Header from './header'
 import { assetsImages } from '../Constant/images';
-import Sidebar from './Sidebar';
 
 export class Home extends Component {
   render() {
     return (
-      <div className='home row'>        
-            <Sidebar /> 
+      <div className='home'>
+          <img
+                  className="background"
+                  src={assetsImages.bg}
+                  alt="Catersmart Logo"
+                /> 
+          <Header />
+          <Master />
       </div>
     )
   }
