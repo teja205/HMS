@@ -19,16 +19,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import Table from '../Component/table';
-import Header from './header';
-import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 
 
@@ -148,21 +144,20 @@ export default function MiniDrawer() {
           <Typography variant="h6" noWrap component="div">
                 Welcome to HMS HOST
           </Typography>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 2}}></Typography>
           <IconButton size="large" aria-label="search" color="inherit">
             <SearchIcon />
           </IconButton>
-        
-
-      <IconButton
+       
+        <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-           
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 2}}>
+         
           <MenuItem>
         <IconButton
             size="large"
@@ -174,7 +169,7 @@ export default function MiniDrawer() {
             </Badge>
         </IconButton>            
          </MenuItem>
-          </Typography>
+         
           {auth && (
             <div>
               <IconButton
@@ -251,6 +246,7 @@ export default function MiniDrawer() {
           ))}
         </List>
         <Divider />
+       
         <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
@@ -278,7 +274,7 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Table />
+        
       </Box>
     </Box>
   );
