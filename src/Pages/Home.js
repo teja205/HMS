@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Table from '../Component/table'
+import Master from '../Component/mastertable';
 import Header from './header'
 import { assetsImages } from '../Constant/images';
 
@@ -13,7 +14,7 @@ export class Home extends Component {
                   alt="Catersmart Logo"
                 /> 
           <Header />
-          <Table />
+          <Master />
       </div>
     )
   }
