@@ -1,0 +1,26 @@
+.header{    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.icon{
+    color: #D91F26;
+    font-size: 20px;
+}
+
+  .MuiTypography-root.MuiTypography-h6.MuiTypography-noWrap.css-1futezt-MuiTypography-root {
+    color: #252733;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+  }
+  header.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  header .css-i4bv87-MuiSvgIcon-root {
+    color: #454647;
+  }
+ 

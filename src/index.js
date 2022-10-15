@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { AuthProvider } from './api/components/Authprovider';
 
+
 ReactDOM.render(
   <React.StrictMode>
   <AuthProvider>
