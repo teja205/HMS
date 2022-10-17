@@ -5,6 +5,7 @@ import uploadIcon from '../Assets/images/uploadicon.png';
 import loginbg from '../Assets/images/loginbg.png';
 import hmsicon from '../Assets/images/hmslogo.png';
 import hmslogo from '../Assets/images/hmslogowhite.png';
+import pricemode from '../Assets/images/price-vector.png';
 
 
 
@@ -18,4 +19,5 @@ export const assetsImages = {
     loginbg : loginbg,
     hmsicon : hmsicon,
     hmslogo : hmslogo,
+    pricemode : pricemode,
 }

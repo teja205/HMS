@@ -26,6 +26,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import Mastertable from '../Component/mastertable'
 
 
 
@@ -220,9 +221,15 @@ export default function MiniDrawer() {
         
         </div>
         
-        
+        <List className='price'><span>
+        <img
+                className=""
+                src={assetsImages.pricemode}
+                alt="Price Mode"
+            /> 
+          </span>Pricing Mode</List>
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Attributization', 'Scoring', 'Ranking', 'Drafts', 'Ranking'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -274,7 +281,7 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        
+        <Mastertable />
       </Box>
     </Box>
   );
